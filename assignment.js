@@ -14,6 +14,8 @@ function woodCalculator(chair, table, bed){
     return totalWood;
 }
 
+
+
 function tinyFriend(friends){
     var shorttestFriend=friends[0];
     for(i=0; i < friends.length; i++){
