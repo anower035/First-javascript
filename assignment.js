@@ -29,7 +29,7 @@ function tinyFriend(friends){
 
 
 function brickCalculator(floorNum){
-    var brickNum
+    var brickNum=0;
     if(floorNum<=10){
         var height=floorNum*15;
         brickNum=height*1000;
@@ -51,3 +51,5 @@ function brickCalculator(floorNum){
     }
     return brickNum;
 }
+var total=brickCalculator(23);
+console.log(total);
