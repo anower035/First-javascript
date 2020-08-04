@@ -51,5 +51,3 @@ function brickCalculator(floorNum){
     }
     return brickNum;
 }
-var total=brickCalculator(23);
-console.log(total);
