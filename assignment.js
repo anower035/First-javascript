@@ -26,3 +26,28 @@ function tinyFriend(friends){
     }
     return shorttestFriend;
 }
+
+
+function brickCalculator(floorNum){
+    var brickNum
+    if(floorNum<=10){
+        var height=floorNum*15;
+        brickNum=height*1000;
+    }
+    else if(floorNum<=20){
+        var height10=150;
+        var remainFloor=floorNum-10;
+        var height20=remainFloor*12;
+        var totalHeight=height10+height20;
+        brickNum=totalHeight*1000;
+    }
+    else{
+        var height10=150;
+        var height20=120;
+        var remainFloor=floorNum-20;
+        var height30=remainFloor*10;
+        var totalHeight=height10+height20+height30;
+        brickNum=totalHeight*1000;
+    }
+    return brickNum;
+}
